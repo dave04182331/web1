@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올 때 메로나</h2>
+
+    <div class="alert-box" id="alert">Alert 박스</div>
+    <button onclick="openAlertPage">버튼</button>
+    <button onclick="closeAlertPage">닫기</button>
+
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+        document.getElementById('hi').style.fontSize = "30px";
+
+        function closeAlertPage(){
+            document.getElementById('alert').style.display = 'none'; 
+        }
+        function openAlertPage(){
+            document.getElementById('alert').style.display = 'block'; 
+        }
+
+
+
+    </script>
+</body>
+</html>
